@@ -6,26 +6,30 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      githubData: {}
+      githubData: []
     };
   };
 
-  getGithubData() {
+  componentDidMount() {
     axios.get(`https://api.github.com/users/adityamulik/repos`)
       .then(res => {
         this.setState({githubData: res.data});
       })
   }
 
-  componentDidMount() {
-    this.getGithubData();
-  }
-
   render() {
 
-    console.log(this.state.githubData);
+    if(this.state.githubData) {
+      console.log(this.state.githubData)
+      var githubDataNew = this.state.githubData.map(function(item){
+        return <div key={item.name}>
+          <p>{item.name}</p>
+        </div>
+      })
+    }
 
     if(this.props.data){
+      console.log(this.props.data.projects);
       var projects = this.props.data.projects.map(function(projects){
         var projectImage = 'images/portfolio/'+projects.image;
         return <div key={projects.title} className="columns portfolio-item">
@@ -56,6 +60,7 @@ class Portfolio extends Component {
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                 {projects}
+                {githubDataNew}
             </div>
           </div>
       </div>
