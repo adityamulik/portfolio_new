@@ -8,6 +8,7 @@ import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
+import axios from 'axios';
 
 class App extends Component {
 
@@ -24,18 +25,10 @@ class App extends Component {
   }
 
   getResumeData(){
-    $.ajax({
-      url:'https://raw.githubusercontent.com/adityamulik/react-resume-template/master/public/resumeData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
+    axios.get('https://raw.githubusercontent.com/adityamulik/portfolio_new/main/public/resumeData.json')
+      .then(res => {
+        this.setState({resumeData: res.data});
+      })
   }
 
   componentDidMount(){

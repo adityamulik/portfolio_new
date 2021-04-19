@@ -1,7 +1,29 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Portfolio extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      githubData: {}
+    };
+  };
+
+  getGithubData() {
+    axios.get(`https://api.github.com/users/adityamulik/repos`)
+      .then(res => {
+        this.setState({githubData: res.data});
+      })
+  }
+
+  componentDidMount() {
+    this.getGithubData();
+  }
+
   render() {
+
+    console.log(this.state.githubData);
 
     if(this.props.data){
       var projects = this.props.data.projects.map(function(projects){
