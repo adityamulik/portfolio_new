@@ -26,7 +26,7 @@ class Portfolio extends Component {
           <p>{item.name}</p>
         </div>
       })
-      console.log(githubDataNew)
+      // console.log(githubDataNew)
       for(let i=1; i<=githubDataNew.length; i++) {
         var githubNo = () => {
           return <div key={i}>
@@ -47,16 +47,7 @@ class Portfolio extends Component {
             <h1>Check Out Some of My Works.</h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              <table>
-                <thead>
-                  <th>No</th>
-                  <th>Project Name</th>
-                </thead>
-                <tbody>
-                  <td>{githubNo}</td>
-                  <td>{githubDataNew}</td>
-                </tbody>
-              </table>
+
             </div>
           </div>
       </div>

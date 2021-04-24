@@ -7,53 +7,17 @@ class Contact extends Component {
    constructor(props) {
       super(props);
       this.state = {
-         isDisabled: true,
-         user_name: null,
-         user_email: null,
-         message: null,
-         errors: {
-            user_name: '',
-            user_email: '',
-            message: '',
-         }
+         name: '',
+         email: '',
+         message: ''
       }
    }
 
    handleChange = (e) => {
       e.preventDefault();
-      const { name, value } = e.target;
-      let errors = this.state.errors;
-      const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
-      switch(name) {
-         case 'user_name':
-            errors.user_name = 
-               value.length < 1
-               ? 'Please enter your name!'
-               : '';
-            break;
-         case 'user_email':
-            errors.user_email = 
-               validEmailRegex.test(value)
-               ? ''
-               : 'Email Address is not valid!';
-            break;
-         case 'message':
-            errors.message = 
-               value.length < 10
-               ? 'Please enter some message!'
-               : '';
-            break;
-         default:
-            break;
-      }
-
-      this.setState({errors, [name]: value}, () => {
-         console.log(errors);
-      })
-
-      if(this.state.user_email != null && this.state.user_name != null && this.state.message != null) {
+      if(e.target.name === "contactName") {
          this.setState({
-            isDisabled: false
+            name: e.target.value
          })
       }
    }
@@ -70,36 +34,6 @@ class Contact extends Component {
          var email = this.props.data.email;
          var message = this.props.data.contactmessage;
       }
-
-      const sendEmail = e => {
-         const URL = `http://localhost:3000?${process.env}`;
-         e.preventDefault();
-         if(validateForm(this.state.errors)) {
-            console.info('Valid Form');
-            // emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_USER_ID)
-            //    .then((result) => {
-            //       console.log("Status" ,result.text);
-            //       document.getElementById("image-loader").style.display = 'none';
-            //    }, (error) => {
-            //       console.log(error.text);
-            //    });
-         }
-         else {
-            console.error('Invalid Form')
-         }
-      };
-
-      const validateForm = errors => {
-         let valid = true;
-         Object.values(errors).forEach(            
-            val => {
-               val.length > 0 &&  (valid = false)
-            }
-         )
-         return valid;
-      };
-
-      const {errors} = this.state;
 
       return (
          <section id="contact">
@@ -123,32 +57,32 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-                  <form onSubmit={sendEmail}>
+                  <form id="contactForm" name="contactForm">
                      <fieldset>
 
                         <div>
-                           <label htmlFor="user_name">Name <span className="required">*</span></label>
-                           <input type="text" size="35" name="user_name" onChange={this.handleChange}/>
+                           <label htmlFor="contactName">Name <span className="required">*</span></label>
+                           <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange} value={this.state.name} />
                         </div>
 
                         <div>
-                           <label htmlFor="user_email">Email <span className="required">*</span></label>
-                           <input type="email" size="35" name="user_email" onChange={this.handleChange}/>
+                           <label htmlFor="contactEmail">Email <span className="required">*</span></label>
+                           <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
                         </div>
 
                         <div>
-                           <label htmlFor="message">Message <span className="required">*</span></label>
-                           <textarea cols="50" rows="15" id="message" name="message" onChange={this.handleChange}></textarea>
+                           <label htmlFor="contactMessage">Message <span className="required">*</span></label>
+                           <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                         </div>
 
                         <div>
-                           <button type="submit" className="submit" disabled={this.state.isDisabled}>Submit</button>
+                           <button className="submit">Submit</button>
                            <span id="image-loader">
                               <img alt="" src="images/loader.gif" />
                            </span>
                         </div>
                      </fieldset>
-                  </form>
+				      </form>
 
                <div id="message-warning"> Error boy</div>
                      <div id="message-success">

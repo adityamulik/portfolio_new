@@ -1,7 +1,31 @@
 import React, { Component } from 'react';
+import { Radar } from 'react-chartjs-2';
 
 class Resume extends Component {
+  
   render() {
+
+    const data = {
+      labels: ['Python', 'Azure', 'Database', 'REST API', 'JavaScript', 'Git', 'Html&CSS', 'Linux'],
+      datasets: [
+        {
+          label: 'Ability',
+          data: [80, 50, 60, 70, 80, 70, 60, 80],
+          backgroundColor: 'rgba(17, 171, 176, 0.3)',
+          borderColor: '#11ABB0',
+          borderWidth: 2
+        },
+      ]
+    };
+    
+    const options = {
+      responsive: true,
+      scale: {
+        ticks: { beginAtZero: true },
+        min: 0,
+        max: 100
+      }
+    };
 
     if(this.props.data){
       var skillmessage = this.props.data.skillmessage;
@@ -65,9 +89,7 @@ class Resume extends Component {
             </p>
 
 				<div className="bars">
-				   <ul className="skills">
-					  {skills}
-					</ul>
+          <Radar data={data} options={options} />
 				</div>
 			</div>
       </div>

@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   getResumeData(){
-    axios.get('https://raw.githubusercontent.com/adityamulik/portfolio_new/main/public/resumeData.json')
+    axios.get('./resumeData.json')
       .then(res => {
         this.setState({resumeData: res.data});
       })
