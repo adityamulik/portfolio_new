@@ -4,12 +4,12 @@
     "occupation":"Software Developer",
     "description":"I hold a total of five years of experience in the domain of Infrastructure & Software Development",
     "image":"profilepic.jpg",
-    "bio":"I am a Software Developer based in Mumbai & a avid programmer.",
+    "bio":"I am a Software Developer based in Mumbai. I code as a passion & for career. Love building new products & have a knack for problem solving.",
     "contactmessage":"",
     "email": "aditya.mulik@gmail.com",
     "phone": "+91-9867647922",
     "address":{
-      "street":"Andheri East",
+      "street":"Mahakali Caves Road",
       "city":"Mumbai",
       "state":"Maharashtra",
       "zip": "400 093"
@@ -45,7 +45,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"My skills displayed on a radar chart. Hover over/ touch data points to view the percentage for the specific skill.",
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
         "school":"Atharva College of Engineering, affliated with Mumbai University",
