@@ -21,3 +21,8 @@
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+
+.react-github-calendar__calendar {
+  border-style: solid;
+  color: #525252;
+}
