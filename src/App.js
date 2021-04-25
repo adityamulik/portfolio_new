@@ -9,6 +9,7 @@ import Resume from './Components/Resume';
 import Contact from './Components/Contact';
 import Portfolio from './Components/Portfolio';
 import axios from 'axios';
+import ClipLoader from "react-spinners/ClipLoader";
 
 class App extends Component {
 
@@ -40,7 +41,7 @@ class App extends Component {
 
   render() {
     return (
-      this.state.loaded ? <h1>Loading!!!!</h1> :
+      this.state.loaded ? <ClipLoader color="#fff" size={150} /> :
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
