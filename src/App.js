@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      foo: 'bar',
+      loaded: true,
       resumeData: {}
     };
 
@@ -27,7 +27,10 @@ class App extends Component {
   getResumeData(){
     axios.get('./resumeData.json')
       .then(res => {
-        this.setState({resumeData: res.data});
+        this.setState({
+          resumeData: res.data,
+          loaded: false
+        });
       })
   }
 
@@ -37,6 +40,7 @@ class App extends Component {
 
   render() {
     return (
+      this.state.loaded ? <h1>Loading!!!!</h1> :
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
