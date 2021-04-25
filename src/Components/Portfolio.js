@@ -73,7 +73,7 @@ class Portfolio extends Component {
             <h1>My GitHub Calendar.</h1>
 
             <div id="portfolio-wrapper" className="github-calendar" blockSize={14} blockMargin={4} fontSize={16}>
-              <GitHubCalendar username="adityamulik" color="hsl(203, 82%, 33%)" >
+              <GitHubCalendar username="adityamulik" color="#11ABB0" >
                 <ReactTooltip delayShow={50} html />
               </GitHubCalendar>
             </div>
