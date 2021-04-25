@@ -16,7 +16,6 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      loaded: true,
       resumeData: {}
     };
 
@@ -29,8 +28,7 @@ class App extends Component {
     axios.get('./resumeData.json')
       .then(res => {
         this.setState({
-          resumeData: res.data,
-          loaded: false
+          resumeData: res.data
         });
       })
   }
@@ -41,7 +39,6 @@ class App extends Component {
 
   render() {
     return (
-      this.state.loaded ? <ClipLoader color="#fff" size={150} /> :
       <div className="App">
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
