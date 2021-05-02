@@ -48,28 +48,6 @@ class Portfolio extends Component {
       <div className="row">
 
          <div className="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works on GitHub.</h1>
-
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              <Carousel 
-                breakPoints={breakPoints}
-              >
-                <Item>
-                  <h2>GeoLocation API</h2>
-                </Item>
-                <Item>
-                  <h2>WebScrapping</h2>
-                </Item>
-                <Item>
-                  <h2>Task Management</h2>
-                </Item>
-                <Item>
-                  <h2>Relaxer App</h2>
-                </Item>
-              </Carousel>
-            </div>
-            <br></br>
             <h1>My GitHub Calendar.</h1>
 
             <div id="portfolio-wrapper" className="github-calendar" blockSize={14} blockMargin={4} fontSize={16}>
