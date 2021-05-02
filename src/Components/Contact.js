@@ -9,17 +9,25 @@ class Contact extends Component {
       this.state = {
          name: '',
          email: '',
-         message: ''
+         messageText: '',
+         disabled: true
       }
    }
 
-   handleChange = (e) => {
-      e.preventDefault();
+   handleChange(e) {
       if(e.target.name === "contactName") {
-         this.setState({
-            name: e.target.value
-         })
+         
       }
+      else if (e.target.name === "contactEmail") {
+         
+      }
+      else if (e.target.name === "contactMessage") {
+         
+      }
+   }
+
+   componentDidUpdate() {
+
    }
 
    render() {
@@ -62,7 +70,7 @@ class Contact extends Component {
 
                         <div>
                            <label htmlFor="contactName">Name <span className="required">*</span></label>
-                           <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange} value={this.state.name} />
+                           <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
                         </div>
 
                         <div>
@@ -72,11 +80,12 @@ class Contact extends Component {
 
                         <div>
                            <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                           <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                           <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={this.handleChange}>
+                           </textarea>
                         </div>
 
                         <div>
-                           <button className="submit">Submit</button>
+                           <button className="submit" disabled={this.state.disabled}>Submit</button>
                            <span id="image-loader">
                               <img alt="" src="images/loader.gif" />
                            </span>
