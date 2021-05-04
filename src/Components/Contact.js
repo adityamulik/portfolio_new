@@ -90,30 +90,19 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-                  <form name="contact" method="POST" data-netlify="true">
+                  <form name="contact" method="POST" netlify>
                      <input type="hidden" name="form-name" value="contact" />
-                     <div>
                         <label htmlFor="contactName">Name <span className="required">*</span></label>
                         <input type="text" defaultValue="" size="35" id="contactName" name="contactName" value={this.state.name} onChange={this.handleNameChange}/>
-                     </div>
-
-                     <div>
                         <label htmlFor="contactEmail">Email <span className="required">*</span></label>
                         <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" value={this.state.email} onChange={this.handleEmailChange}/>
-                     </div>
-
-                     <div>
                         <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                         <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.messageText} onChange={this.handleMessageChange}>
                         </textarea>
-                     </div>
-
-                     <div>
                         <button className="submit" disabled={this.state.disabled}>Submit</button>
                         <span id="image-loader">
                            <img alt="" src="images/loader.gif" />
                         </span>
-                     </div>
 				      </form>
 
                <div id="message-warning"> Error boy</div>
