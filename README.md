@@ -4,4 +4,4 @@ This project is created using ReactJS & Modern JavaScript displaying my repertoi
 
 ## Demo:
 
-Live Application Link: https://quizzical-liskov-0573df.netlify.app/
+Live Application Link: https://adityamulik.netlify.app/
