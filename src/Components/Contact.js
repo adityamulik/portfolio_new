@@ -65,7 +65,6 @@ class Contact extends Component {
          var zip = this.props.data.address.zip;
          var phone= this.props.data.phone;
          var email = this.props.data.email;
-         var message = this.props.data.contactmessage;
       }
 
       return (
@@ -91,13 +90,12 @@ class Contact extends Component {
                <div className="eight columns">
 
                   <form action="POST" data-netlify="true">
-                     <input type="hidden" name="form-name" value="contact" />
-                        <label htmlFor="contactName">Name <span className="required">*</span></label>
-                        <input type="text" defaultValue="" size="35" id="contactName" name="contactName" value={this.state.name} onChange={this.handleNameChange}/>
-                        <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                        <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" value={this.state.email} onChange={this.handleEmailChange}/>
-                        <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.messageText} onChange={this.handleMessageChange}>
+                        <label htmlFor="name">Name <span className="required">*</span></label>
+                        <input type="text" id="name" name="name" value={this.state.name} onChange={this.handleNameChange}/>
+                        <label htmlFor="email">Email <span className="required">*</span></label>
+                        <input type="text" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange}/>
+                        <label htmlFor="message">Message <span className="required">*</span></label>
+                        <textarea cols="50" rows="15" id="message" name="message" value={this.state.messageText} onChange={this.handleMessageChange}>
                         </textarea>
                         <button className="submit" disabled={this.state.disabled}>Submit</button>
                         <span id="image-loader">
