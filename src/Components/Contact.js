@@ -78,12 +78,6 @@ class Contact extends Component {
 
                </div>
 
-               <div className="ten columns">
-
-                     <p className="lead">{message}</p>
-
-               </div>
-
             </div>
 
             <div className="row">
