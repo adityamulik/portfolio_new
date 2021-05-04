@@ -12,6 +12,7 @@ class Contact extends Component {
          messageText: '',
          nameValid: false,
          emailValid: false,
+         patternValid: false,
          messageValid: false,
          disabled: true
       }
@@ -22,7 +23,7 @@ class Contact extends Component {
 
    handleNameChange(e) {
       let nameValid = e.target.value ? true : false;
-      let submitValid = this.state.emailValid && this.state.messageValid && nameValid
+      let submitValid = this.state.emailValid && this.state.patternValid && this.state.messageValid && nameValid
       this.setState({
          name: e.target.value,
          nameValid: nameValid,
@@ -46,7 +47,7 @@ class Contact extends Component {
 
    handleMessageChange(e) {
       let messageValid = e.target.value ? true : false;
-      let submitValid = this.state.nameValid && this.state.emailValid && messageValid
+      let submitValid = this.state.nameValid && this.state.patternValid && this.state.emailValid && messageValid
       this.setState({
          messageText: e.target.value,
          messageValid: messageValid,
@@ -89,8 +90,12 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-                  <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
+                  <form id="contactForm" name="contactForm" method="POST" netlify data-netlify="true">
                      <fieldset>
+
+                        <div>
+                           <input type="hidden" name="form-name" value="contact" />
+                        </div>
 
                         <div>
                            <label htmlFor="contactName">Name <span className="required">*</span></label>
