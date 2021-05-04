@@ -84,17 +84,25 @@ class Contact extends Component {
                <div className="eight columns">
 
                   <form action="POST" data-netlify="true">
+                     <div>
                         <label htmlFor="name">Name <span className="required">*</span></label>
                         <input type="text" id="name" name="name" value={this.state.name} onChange={this.handleNameChange}/>
+                     </div>
+                     <div>
                         <label htmlFor="email">Email <span className="required">*</span></label>
                         <input type="text" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange}/>
+                     </div>
+                     <div>
                         <label htmlFor="message">Message <span className="required">*</span></label>
                         <textarea cols="50" rows="15" id="message" name="message" value={this.state.messageText} onChange={this.handleMessageChange}>
                         </textarea>
+                     </div>
+                     <div>
                         <button className="submit" disabled={this.state.disabled}>Submit</button>
                         <span id="image-loader">
                            <img alt="" src="images/loader.gif" />
                         </span>
+                     </div>
 				      </form>
 
                <div id="message-warning"> Error boy</div>
