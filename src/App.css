@@ -23,6 +23,6 @@
 }
 
 .react-github-calendar__calendar {
-  border-style: solid;
+  border: 1px solid rgb(82, 82, 82, 0.4);
   color: #525252;
 }
