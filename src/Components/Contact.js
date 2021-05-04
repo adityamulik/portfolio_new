@@ -90,7 +90,7 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-                  <form name="contact" method="POST" netlify data-netlify="true">
+                  <form name="contact" method="POST" data-netlify="true">
                      <input type="hidden" name="form-name" value="contact" />
                      <div>
                         <label htmlFor="contactName">Name <span className="required">*</span></label>
