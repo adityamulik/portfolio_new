@@ -83,7 +83,8 @@ class Contact extends Component {
             <div className="row">
                <div className="eight columns">
 
-                  <form action="POST" data-netlify="true">
+                  <form id="contact" name="contact" method="POST" data-netlify="true">
+                     <input type="hidden" name="form-name" value="contact" />
                      <div>
                         <label htmlFor="name">Name <span className="required">*</span></label>
                         <input type="text" id="name" name="name" value={this.state.name} onChange={this.handleNameChange}/>
