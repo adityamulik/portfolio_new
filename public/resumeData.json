@@ -68,81 +68,16 @@
         "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention."
       }
     ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"80%"
-      },
-      {
-        "name":"JavaScript",
-        "level":"70%"
-      },
-      {
-        "name":"React",
-        "level":"70%"
-      },
-      {
-        "name":"CSS",
-        "level":"60%"
-      },
-      {
-        "name":"HTML5",
-        "level":"70%"
-      },
-      {
-        "name":"Git",
-        "level":"80%"
-      },
-      {
-        "name":"MySQL",
-        "level":"70%"
-      }
-    ]
-  },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
-      }
-    ]
-  },
-  "testimonials":{
-    "testimonials":[
-      {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
-      },
-      {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
-      }
-    ]
+    "skills": ["Python", "Azure", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux"],
+    "skills_values": [80, 50, 60, 70, 80, 70, 60, 80],
+    "certificationmessage": "Please view the below certifications I've accomplished!",
+    "certification" : [{
+        "name": "Python (Basic)",
+        "logo": "hackerrank_logo.jpg",
+        "author": "Hackerrank",
+        "issued": "May 2021",
+        "credential_id": "a01325f55ef0",
+        "link": "https://www.hackerrank.com/certificates/a01325f55ef0"
+    }]
   }
 }

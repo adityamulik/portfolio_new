@@ -27,3 +27,20 @@
   color: #525252;
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+
+.certificate {
+  float: left;
+}
+
+.certificate-content {
+  float: right;
+  margin-left: 2.5em;
+}
+
+.certificate-name {
+  text-align: left;
+}
+
+.certificate-para {
+  margin: 0 0 0 !important;
+}
