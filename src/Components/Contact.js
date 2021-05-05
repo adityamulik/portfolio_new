@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import emailjs from 'emailjs-com';
-import Alert from 'react-bootstrap/Alert'
 
 class Contact extends Component {
 
@@ -64,7 +62,6 @@ class Contact extends Component {
          var state = this.props.data.address.state;
          var zip = this.props.data.address.zip;
          var phone= this.props.data.phone;
-         var email = this.props.data.email;
       }
 
       return (
@@ -91,7 +88,7 @@ class Contact extends Component {
                      </div>
                      <div>
                         <label htmlFor="email">Email <span className="required">*</span></label>
-                        <input type="text" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange}/>
+                        <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange}/>
                      </div>
                      <div>
                         <label htmlFor="message">Message <span className="required">*</span></label>
