@@ -370,6 +370,25 @@
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }   
 
+   /* Certificates  */
+
+   .certificate {
+      float: left;
+    }
+    
+    .certificate-content {
+      float: right;
+      margin-left: 0.9em !important;
+    }
+    
+    .certificate-name {
+      text-align: left;
+    }
+    
+    .certificate-para {
+      margin: 0 0 0 !important;
+    }
+
 }
 
 
