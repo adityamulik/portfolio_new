@@ -53,7 +53,7 @@ exports.handler = async (event, context, callback) => {
   } catch {
     const badResponse = "Please visit Aditya's Official Twitter Handle to view Tweets!";
     return ({
-        statusCode: 400,
+        statusCode: 401,
         body: JSON.stringify(badResponse)
     })
   }
