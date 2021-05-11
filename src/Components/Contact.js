@@ -78,18 +78,16 @@ class Contact extends Component {
 
       console.log(this.state.twitterFeeds.length);
 
-      if (this.state.twitterFeeds.length > 0 || this.state.twitterFeeds.length !== undefined) {
-         var twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
-            return <li>
+      const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
+         return <ul>
+            <li>
                <span>
                   {item.text}
                </span>
                <b> - Tweeted on {item.created_at.slice(0, 10)} </b>
             </li>
-         })  
-      } else {
-         twitterFeed = <p>Aditya hasn't tweeted anything recently!</p>
-      }
+         </ul>
+      });
 
       if(this.props.data){
          var name = this.props.data.name;
@@ -159,9 +157,13 @@ class Contact extends Component {
                   </div>
                   <div className="widget widget_tweets">
                      <h4 className="widget-title">Latest Tweets</h4>
-                     <ul id="twitter">
-                        {twitterFeed}
-                     </ul>
+                        {
+                           this.state.twitterFeeds.length > 0 || this.state.twitterFeeds.length !== undefined
+                        ?
+                           twitterFeed
+                        :
+                           <p>Aditya hasn't tweeted anything recently!</p>
+                        }
                   </div>
                </aside>
          </div>
