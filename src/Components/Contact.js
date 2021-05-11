@@ -78,7 +78,7 @@ class Contact extends Component {
 
       console.log(this.state.twitterFeeds);
 
-      const twitterFeed = this.state.twitterFeeds.map(item => {
+      const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
          return <li>
             <span>
                {item.text}
