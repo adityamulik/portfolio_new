@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import React, { Component } from 'react';
 
 class Contact extends Component {
@@ -12,7 +13,8 @@ class Contact extends Component {
          emailValid: false,
          patternValid: false,
          messageValid: false,
-         disabled: true
+         disabled: true,
+         twitterFeeds: []
       }
       this.handleNameChange = this.handleNameChange.bind(this);
       this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -53,7 +55,36 @@ class Contact extends Component {
       });
    }
 
+   componentDidMount() {
+      fetch('/.netlify/functions/twitterApi')
+         .then(res => res.json())
+         .then(data => {
+            
+            this.setState({
+               twitterFeeds: data.data
+            })
+
+            data.data.map(item => {
+               return <li>
+                  <span>
+                     {item.text}
+                  </span>
+               </li>
+            })
+         });
+   }
+
    render() {
+
+      console.log(this.state.twitterFeeds);
+
+      const twitterFeed = this.state.twitterFeeds.map(item => {
+         return <li>
+            <span>
+               {item.text}
+            </span>
+         </li>
+      })
 
       if(this.props.data){
          var name = this.props.data.name;
@@ -120,6 +151,12 @@ class Contact extends Component {
                         {city}, {state} {zip}<br />
                         <span>{phone}</span>
                      </p>
+                  </div>
+                  <div className="widget widget_tweets">
+                     <h4 className="widget-title">Latest Tweets</h4>
+                     <ul id="twitter">
+                        {twitterFeed}
+                     </ul>
                   </div>
                </aside>
          </div>
