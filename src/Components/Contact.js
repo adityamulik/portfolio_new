@@ -76,15 +76,20 @@ class Contact extends Component {
 
    render() {
 
-      console.log(this.state.twitterFeeds);
+      console.log(this.state.twitterFeeds.length);
 
-      const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
-         return <li>
-            <span>
-               {item.text}
-            </span>
-         </li>
-      })
+      if (this.state.twitterFeeds.length > 0 || this.state.twitterFeeds.length !== undefined) {
+         var twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
+            return <li>
+               <span>
+                  {item.text}
+               </span>
+               <b> - Tweeted on {item.created_at.slice(0, 10)} </b>
+            </li>
+         })  
+      } else {
+         twitterFeed = <p>Aditya hasn't tweeted anything recently!</p>
+      }
 
       if(this.props.data){
          var name = this.props.data.name;
