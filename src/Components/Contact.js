@@ -84,6 +84,7 @@ class Contact extends Component {
                <span>
                   {item.text}
                </span>
+               <br></br>
                <b> - Tweeted on {item.created_at.slice(0, 10)} </b>
             </li>
          </ul>
