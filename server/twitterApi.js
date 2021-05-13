@@ -30,21 +30,6 @@ exports.handler = async (event, context, callback) => {
     }
   }
 
-//   (async () => {
-
-//       try {
-//           // Make request
-//           const response = await getRequest();
-//           // console.dir(response, {
-//           //     depth: null
-//           // });
-
-//       } catch (e) {
-//           console.log(e);
-//           process.exit(-1);
-//       }
-//   })();
-
   try {
     const response = await getRequest();
     return ({

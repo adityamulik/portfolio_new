@@ -65,7 +65,7 @@ class Contact extends Component {
             })
 
             data.data.map(item => {
-               return <li>
+               return <li key={item.text}>
                   <span>
                      {item.text}
                   </span>
@@ -76,20 +76,18 @@ class Contact extends Component {
 
    render() {
 
-      console.log(this.state.twitterFeeds.length);
+      // console.log(this.state.twitterFeeds.length);
 
       const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
          const date = new Date(item.created_at.slice(0, 10));
 
-         return <ul>
-            <li>
-               <span>
-                  {item.text}
-               </span>
-               <br></br>
-               <b> - Tweeted on {date.toDateString().slice(4,)} </b>
-            </li>
-         </ul>
+         return <li key={item.text}>
+                  <span key={item.text}>
+                     {item.text}
+                  </span>
+                  <br></br>
+                  <b> - Tweeted on {date.toDateString().slice(4,)} </b>
+               </li>
       });
 
       if(this.props.data){
@@ -163,7 +161,9 @@ class Contact extends Component {
                         {
                            this.state.twitterFeeds.length > 0 || this.state.twitterFeeds.length !== undefined
                         ?
-                           twitterFeed
+                           <ul>
+                              {twitterFeed}
+                           </ul>
                         :
                            <p>Aditya hasn't tweeted anything recently!</p>
                         }
