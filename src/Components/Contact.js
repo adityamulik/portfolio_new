@@ -79,14 +79,15 @@ class Contact extends Component {
       // console.log(this.state.twitterFeeds.length);
 
       const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
-         const date = new Date(item.created_at.slice(0, 10));
+      const date = item.created_at.slice(0, 10).split('-');
+      const myDate = (new Date(date[0], date[1] - 1, date[2])).toDateString().slice(4,);
 
          return <li key={item.text}>
                   <span key={item.text}>
                      {item.text}
                   </span>
                   <br></br>
-                  <b> - Tweeted on {date.toDateString().slice(4,)} </b>
+                  <b> - Tweeted on {myDate} </b>
                </li>
       });
 
