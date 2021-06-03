@@ -64,13 +64,18 @@ class Contact extends Component {
                twitterFeeds: data.data
             })
 
-            data.data.map(item => {
-               return <li key={item.text}>
-                  <span>
-                     {item.text}
-                  </span>
-               </li>
-            })
+            if (data.data !== undefined) {
+               data.data.map(item => {
+                  return <li key={item.text}>
+                     <span>
+                        {item.text}
+                     </span>
+                  </li>
+               })
+            }
+            else {
+               return;
+            }
          });
    }
 
@@ -78,18 +83,20 @@ class Contact extends Component {
 
       // console.log(this.state.twitterFeeds.length);
 
-      const twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
-      const date = item.created_at.slice(0, 10).split('-');
-      const myDate = (new Date(date[0], date[1] - 1, date[2])).toDateString().slice(4,);
+      if(this.state.twitterFeeds !== undefined) {
+         var twitterFeed = this.state.twitterFeeds.slice(0, 3).map(item => {
+         const date = item.created_at.slice(0, 10).split('-');
+         const myDate = (new Date(date[0], date[1] - 1, date[2])).toDateString().slice(4,);
 
-         return <li key={item.text}>
-                  <span key={item.text}>
-                     {item.text}
-                  </span>
-                  <br></br>
-                  <b> - Tweeted on {myDate} </b>
-               </li>
-      });
+            return <li key={item.text}>
+                     <span key={item.text}>
+                        {item.text}
+                     </span>
+                     <br></br>
+                     <b> - Tweeted on {myDate} </b>
+                  </li>
+         });
+      }
 
       if(this.props.data){
          var name = this.props.data.name;
@@ -160,7 +167,7 @@ class Contact extends Component {
                   <div className="widget widget_tweets">
                      <h4 className="widget-title">Latest Tweets</h4>
                         {
-                           this.state.twitterFeeds.length > 0 || this.state.twitterFeeds.length !== undefined
+                           this.state.twitterFeeds !== undefined
                         ?
                            <ul>
                               {twitterFeed}
