@@ -68,8 +68,8 @@
         "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention."
       }
     ],
-    "skills": ["Python", "Azure", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux"],
-    "skills_values": [80, 50, 60, 70, 80, 70, 60, 80],
+    "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux"],
+    "skills_values": [80, 50, 80, 60, 70, 80, 70, 60, 80],
     "certificationmessage": "Please view the below certifications I've accomplished!",
     "certification" : [
       {
