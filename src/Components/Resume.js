@@ -31,17 +31,17 @@ class Resume extends Component {
         ]
       };
       var certificationmessage = this.props.data.certificationmessage;
-      var hackerrank_log = "images/"+this.props.data.certification[0].logo;
       var certificate = this.props.data.certification.map(function(certi){
         return <div key={certi.name} className="certificate">
-                <img className="hackerrank-logo" src={hackerrank_log} alt="Hackerrank Logo" />
-                <div className="certificate-content">
-                  <h4 className="certificate-name">{certi.name}</h4>
-                  <p className="certificate-para">{certi.author}</p>
-                  <p className="certificate-para">Issued {certi.issued}</p>
-                  <p className="certificate-para">Credential ID: {certi.credential_id}</p>
-                  <p className="certificate-para"><a href={certi.link} target="_blank" rel="noopener noreferrer">View</a></p>
-                </div>
+                  <div className="image-container">
+                    <img className="logo" src={"images/" + certi.logo} alt="Hackerrank Logo" />
+                  </div>   
+                  <div className="certicate-credentials-container">
+                    <h4 className="certificate-name">{certi.name}</h4>
+                    <p className="certificate-para">{certi.author}</p>
+                    <p className="certificate-para">Issued {certi.issued}</p>
+                    <p className="certificate-para"><a href={certi.link} target="_blank" rel="noopener noreferrer">View</a></p>
+                  </div>                                 
               </div>
         });
     }
@@ -111,7 +111,9 @@ class Resume extends Component {
           <p>
             {certificationmessage}
           </p>
-          {certificate}
+          <div className="certificate-container">
+            {certificate}
+          </div>
 			  </div>
       </div>
 

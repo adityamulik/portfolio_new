@@ -71,12 +71,19 @@
     "skills": ["Python", "Azure", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux"],
     "skills_values": [80, 50, 60, 70, 80, 70, 60, 80],
     "certificationmessage": "Please view the below certifications I've accomplished!",
-    "certification" : [{
+    "certification" : [
+      {
+        "name": "AWS Certified Solutions Architect - Associate",
+        "logo": "aws.png",
+        "author": "Amazon Web Services (AWS)",
+        "issued": "July 2021",
+        "link": "https://www.credly.com/badges/69fbdffe-22ce-4e0b-952e-92bcb20dfa3a?source=linked_in_profile"
+      },
+      {
         "name": "Python (Basic)",
         "logo": "hackerrank_logo.jpg",
         "author": "Hackerrank",
         "issued": "May 2021",
-        "credential_id": "a01325f55ef0",
         "link": "https://www.hackerrank.com/certificates/a01325f55ef0"
     }]
   }
