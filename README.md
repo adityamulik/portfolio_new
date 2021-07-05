@@ -4,4 +4,4 @@ This project is created using ReactJS & Modern JavaScript as well as jQuery disp
 
 ## Demo:
 
-Live Application Link: https://adityamulik.netlify.app/
+Live Application Link: https://www.adityamulik.com/
