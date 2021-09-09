@@ -4,15 +4,15 @@
     "occupation":"Software Developer",
     "description":"I hold a total of five years of experience in the domain of Infrastructure & Software Development",
     "image":"profilepic.jpg",
-    "bio":"I am a Software Developer based in Mumbai. I code as a passion & for career. Love building new products & have a knack for problem solving.",
+    "bio":"I am a current graduate student at Northeastern University pursing Masters in Informations System majoring in Software Development. I have previously worked as a Linux System Administration, DevOps Engineer & as a Fullstack developer holding a total of 5 years of experience in Mumbai, India.",
     "contactmessage":"",
-    "email": "aditya.mulik@gmail.com",
-    "phone": "+91-9867647922",
+    "email": "mulik.a@northeastern.edu",
+    "phone": "+1-857-488-1743",
     "address":{
-      "street":"Andheri East",
-      "city":"Mumbai",
-      "state":"Maharashtra",
-      "zip": "400 093"
+      "street":"1575 Tremont Street",
+      "city":"Boston",
+      "state":"Masachussets",
+      "zip": "02120"
     },
     "website": "http://www.adityamulik.com",
     "resumedownload":"https://github.com/adityamulik/adityamulik.github.io/raw/main/src/assets/Aditya_Mulik_Resume.pdf",
@@ -48,6 +48,12 @@
     "skillmessage":"Click on the datapoints to view my skills self-rated on a scale of 100.",
     "education":[
       {
+        "school":"Northeastern University, Khoury College of Computer Sciences",
+        "degree":"Masters of Science, Information Systems",
+        "graduated":"In-progress",
+        "description":"Enrolled in the General Information Systems track majoring in Software Development."
+      },
+      {
         "school":"Atharva College of Engineering, affliated with Mumbai University",
         "degree":"Bachelor of Engineering, Information Technology",
         "graduated":"May 2016",
@@ -58,7 +64,7 @@
       {
         "company":"Decimal Point Analytics",
         "title":"Python Programmer",
-        "years":"June 2020 - Present",
+        "years":"June 2020 - Sept 2021",
         "description":"Worked in an Data focused analytics based company as a Python Developer. Focused majorly on creating powerful interactive visuals using various Python & JavaScript Libraries for gaining meaningful insights. Created various Web Applications & automation scripts."
       },
       {
