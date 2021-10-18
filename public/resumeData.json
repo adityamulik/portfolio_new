@@ -51,7 +51,7 @@
         "school":"Northeastern University, College of Engineering",
         "degree":"Masters of Science, Information Systems",
         "graduated":"In-progress",
-        "description":"Enrolled in the General Information Systems track majoring in Software Development."
+        "description":"Currently enrolled in the General Information Systems track majoring in Software Development."
       },
       {
         "school":"Atharva College of Engineering, affliated with Mumbai University",
@@ -61,6 +61,12 @@
       }
     ],
     "work":[
+      {
+        "company":"Northeastern University, College of Engineering",
+        "title":"Graduate Teaching Assistant",
+        "years":"Sept 2021 - Dec 2021",
+        "description":"Working with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester."
+      },
       {
         "company":"Decimal Point Analytics",
         "title":"Python Programmer",
