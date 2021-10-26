@@ -84,7 +84,7 @@ class Resume extends Component {
         </div>
     </div>
 
-      {/* <div className="row work">
+      <div className="row work">
          <div className="three columns header-col">
             <h1><span>Skills</span></h1>
          </div>
@@ -98,7 +98,7 @@ class Resume extends Component {
             <Radar data={data} options={options} />
           </div>
 			  </div>
-      </div> */}
+      </div>
 
       <div className="row certification">
 
