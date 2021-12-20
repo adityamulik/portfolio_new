@@ -95,7 +95,9 @@ class Resume extends Component {
           </p>
 
           <div className="bars">
-            <Radar data={data} options={options} />
+            {data && (
+              <Radar data={data} options={options} />
+            )}            
           </div>
 			  </div>
       </div>
