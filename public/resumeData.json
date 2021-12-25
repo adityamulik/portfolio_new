@@ -68,6 +68,12 @@
         "description":"Working with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester."
       },
       {
+        "company":"Adnet Global",
+        "title":"Python Consultant",
+        "years":"May 2021 - Sept 2021",
+        "description":"Worked as a Python Development consultant wherein onboarded a software solution and created several workflows by utilizing API endpoints for smoother setup."
+      },
+      {
         "company":"Decimal Point Analytics",
         "title":"Python Programmer",
         "years":"June 2020 - Sept 2021",
@@ -80,8 +86,8 @@
         "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention."
       }
     ],
-    "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux"],
-    "skills_values": [80, 50, 80, 60, 70, 80, 70, 60, 80],
+    "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux", "Java"],
+    "skills_values": [80, 50, 80, 60, 70, 80, 70, 60, 80, 90],
     "certificationmessage": "Please view the below certifications I've accomplished!",
     "certification" : [
       {
