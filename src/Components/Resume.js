@@ -14,16 +14,14 @@ class Resume extends Component {
       });
       var work = this.props.data.work.map(function(work){
         return (
-        <div key={work.company}>
-          <div className="company_container"> 
-            <div className='company_logo_container'>
-              <img className="company_logo" src={"images/" + work.logo} alt="Hackerrank Logo" />
-            </div>
-            <div className='company_details'>
-              <h3>{work.company}</h3>
-              <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-              <p>{work.description}</p>
-            </div>            
+        <div key={work.company} class="work-container">
+          <div className='company_logo_container'>
+            <img className="company_logo" src={"images/" + work.logo} alt="Hackerrank Logo" />
+          </div>
+          <div className='company_details'>
+            <h3>{work.company}</h3>
+            <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
+            <p>{work.description}</p>        
           </div>
         </div>)
       });

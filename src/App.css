@@ -43,13 +43,14 @@
   max-width: 100px;
 }
 
-.company_container {
-  display: flex;
+.work-container {
+  display: flex !important;
+  max-width: 100%;
 }
 
 .company_logo_container {
-  height: 250px;
-  width: 550px;
+  max-width: 30%;
+  max-height: 100px;
 }
 
 .company_logo {
@@ -58,6 +59,7 @@
 }
 
 .company_details {
+  max-width: 70%;
   padding-left: 30px;
 }
 
