@@ -63,28 +63,39 @@
     ],
     "work":[
       {
+        "company":"Northeastern University, D'Amore-McKim School of Business",
+        "title":"Graduate Research Assistant",
+        "years":"Jan 2022 - Present",
+        "description":"Working with Professor Shawn Bhimani as a Graduate Research Assistant.",
+        "logo": "damore.png"
+      },
+      {
         "company":"Northeastern University, College of Engineering",
         "title":"Graduate Teaching Assistant",
-        "years":"Sept 2021 - Apr 2022",
-        "description":"Worked with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester and rehired for the Spring 2022 semester."
+        "years":"Sept 2021 - Present",
+        "description":"Working with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester and rehired for the Spring 2022 semester.",
+        "logo": "coe.png"
       },
       {
         "company":"Adnet Global",
         "title":"Python Consultant",
         "years":"May 2021 - Sept 2021",
-        "description":"Worked as a Python Development consultant wherein onboarded a software solution and created several workflows by utilizing API endpoints for smoother setup."
+        "description":"Worked as a Python Development consultant wherein onboarded a software solution and created several workflows by utilizing API endpoints for smoother setup.",
+        "logo": "adnet.png"
       },
       {
         "company":"Decimal Point Analytics",
         "title":"Python Programmer",
         "years":"June 2020 - Sept 2021",
-        "description":"Worked in an Data focused analytics based company as a Python Developer. Focused majorly on creating powerful interactive visuals using various Python & JavaScript Libraries for gaining meaningful insights. Created various Web Applications & automation scripts."
+        "description":"Worked in an Data focused analytics based company as a Python Developer. Focused majorly on creating powerful interactive visuals using various Python & JavaScript Libraries for gaining meaningful insights. Created various Web Applications & automation scripts.",
+        "logo": "dpa.jpeg"
       },
       {
         "company":"Intertrust Group",
         "title":"Associate",
         "years":"September 2016 - June 2020",
-        "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention."
+        "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention.",
+        "logo": "itg.jpeg"
       }
     ],
     "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux", "Java"],
