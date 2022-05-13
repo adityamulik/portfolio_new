@@ -63,17 +63,17 @@
     ],
     "work":[
       {
-        "company":"Northeastern University, D'Amore-McKim School of Business",
-        "title":"Graduate Research Assistant",
-        "years":"Jan 2022 - Present",
-        "description":"Working with Professor Shawn Bhimani as a Graduate Research Assistant.",
-        "logo": "damore.png"
+        "company":"Red Hat",
+        "title":"Software Engineer Intern",
+        "years":"May 2022 - Present",
+        "description":"Working as a software engineer intern at Red Hat as a summer intern.",
+        "logo": "red_hat.png"
       },
       {
         "company":"Northeastern University, College of Engineering",
         "title":"Graduate Teaching Assistant",
-        "years":"Sept 2021 - Present",
-        "description":"Working with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester and rehired for the Spring 2022 semester.",
+        "years":"Sept 2021 - May 2022",
+        "description":"Worked with Professor Daniel Peters on course CSYE 7374 - Design Patterns for the Fall 2021 Semester and rehired for the Spring 2022 semester.",
         "logo": "coe.png"
       },
       {

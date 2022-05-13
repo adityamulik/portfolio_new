@@ -49,6 +49,7 @@
 }
 
 .company_logo_container {
+  text-align: center;
   max-width: 30%;
   max-height: 100px;
 }
@@ -61,6 +62,25 @@
 .company_details {
   max-width: 70%;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 350px){
+  .work-container {
+    display: inline !important;
+  }
+
+  .company_logo_container {
+    max-width: 100% !important;
+    max-height: fit-content;
+  }
+
+  .company_logo {
+    max-width: 100%;
+  }
+
+  .company_details {
+    max-width: 100% !important;
+  }
 }
 
 .certicate-credentials-container {
