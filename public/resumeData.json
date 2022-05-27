@@ -63,6 +63,12 @@
     ],
     "work":[
       {
+        "company":"Red Hat Inc.",
+        "title":"Software Engineering Intern",
+        "years":"May 2022 - Aug 2022",
+        "description":"Working with the Ansible Productization team in developing, building and packaging software solutions."
+      },
+      {
         "company":"Northeastern University, College of Engineering",
         "title":"Graduate Teaching Assistant",
         "years":"Sept 2021 - Apr 2022",
