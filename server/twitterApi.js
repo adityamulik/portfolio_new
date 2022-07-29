@@ -37,7 +37,7 @@ exports.handler = async (event, context, callback) => {
         body: JSON.stringify(response)
     })
   } catch {
-    const badResponse = "Please visit Aditya's Official Twitter Handle to view Tweets!";
+    const badResponse = "Please visit Aditya's Official Twitter Handle to view his tweets!";
     return ({
         statusCode: 401,
         body: JSON.stringify(badResponse)
