@@ -19,7 +19,7 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
-              <li>&copy; Copyright 2023 Aditya Mulik</li>
+              <li>&copy; 2023 Aditya Mulik. All Rights Reserved.</li>
            </ul>
 
         </div>
