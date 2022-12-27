@@ -12,6 +12,11 @@
 .vertical-timeline-element-content-arrow {
   display: none
 }
+
+.vertical-timeline-element-icon:hover {
+  cursor: pointer;
+}
+
 .vertical-timeline-element--work {
   
 }
