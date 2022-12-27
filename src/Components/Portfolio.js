@@ -44,23 +44,25 @@ class Portfolio extends Component {
     return (
 
       <section id="portfolio">
-
-      <div className="row">
-
-         <div className="twelve columns collapsed">
-            <h1>My GitHub Calendar.</h1>
-
-            <div id="portfolio-wrapper" className="github-calendar">
-              <GitHubCalendar 
-                username="adityamulik" 
-                color="#11ABB0" 
-              >
-                <ReactTooltip delayShow={50} html />
-              </GitHubCalendar>
-            </div>
+        <div className="row">
+          <div className="three columns header-col">
+              {/* <h1><span>Projects</span></h1> */}
           </div>
-      </div>
-   </section>
+
+          <div className="twelve columns collapsed">
+              <h1>My GitHub Calendar.</h1>
+
+              <div id="portfolio-wrapper" className="github-calendar">
+                <GitHubCalendar 
+                  username="adityamulik" 
+                  color="#11ABB0" 
+                >
+                  <ReactTooltip delayShow={50} html />
+                </GitHubCalendar>
+              </div>
+            </div>
+        </div>
+      </section>
     );
   }
 }

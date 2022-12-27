@@ -4,16 +4,16 @@
     "occupation":"Software Developer",
     "description":"I hold a total of five years of experience in the domain of Infrastructure & Software Development",
     "image":"profilepic.jpg",
-    "bio":"I am a current graduate student at Northeastern University, Boston pursing Masters in Informations System majoring in Software Development. I have previously worked as a Linux System Administration, DevOps Engineer & as a Fullstack developer holding a total of 5 years of experience in Mumbai, India.",
-    "aboutme": "I’m a seasoned Software Developer with a dedicated approach to work and aspire to attain larger goals. My key interest lies in problem solving and build products which aims to solve real world problems with help of several programming languages and cloud solutions. I am passionate about Software Development, I possess good leadership and public speaking skills. I am always open to new pursuits and ready to explore new avenues of work & interest. I aim to be competent and apply my expertise towards contributing to a much better and technologically advanced tomorrow.",
+    "bio":"",
+    "aboutme": "I am a seasoned Software Engineer with a dedicated approach to work and aspire to attain larger goals. My key interest lies in problem solving and building products which aims to solve real world problems with help of several programming languages and cloud solutions. Currently I’m working with Walmart Labs at Reston, Virginia working as a Software Engineer.",
     "contactmessage":"",
-    "email": "mulik.a@northeastern.edu",
+    "email": "aditya.mulik@gmail.com",
     "phone": "+x-xxx-xxx-xxxx",
     "address":{
       "street":"",
-      "city":"Boston",
-      "state":"Masachussets",
-      "zip": "02120"
+      "city":"Ashburn",
+      "state":"Virginia",
+      "zip": "20148"
     },
     "website": "http://www.adityamulik.com",
     "resumedownload":"https://github.com/adityamulik/adityamulik.github.io/raw/main/src/assets/Aditya_Mulik_Resume.pdf",
@@ -51,52 +51,98 @@
       {
         "school":"Northeastern University, College of Engineering",
         "degree":"Masters of Science, Information Systems",
-        "graduated":"In-progress",
-        "description":"Currently enrolled in the General Information Systems track majoring in Software Development."
+        "graduated":"Dec 2022",
+        "description":"Majored in Information Systems focusing on Software Engineering track having completed my graduate studies at Northeastern University"
       },
       {
         "school":"Atharva College of Engineering, affliated with Mumbai University",
         "degree":"Bachelor of Engineering, Information Technology",
         "graduated":"May 2016",
-        "description":"Majored in Information Technology focusing on Software Development & minor in Computer Networks having completed my undergraduate studies and received Bachelor's In Engineering (B.E.) Degree."
+        "description":"Majored in Information Technology focusing on Software Development & minor in Computer Networks having completed my undergraduate studies and received Bachelor's In Engineering (B.E.) Degree"
       }
     ],
     "work":[
       {
+        "company": "Walmart Labs",
+        "title": "Software Engineer - III",
+        "years": "Jan 2023 - Present",
+        "location": "Reston, Virginia",
+        "description": "Working as a Software Engineer at Walmart Labs",
+        "logo": "walmart_logo.png",
+        "url": "https://www.walmart.com/"
+      },
+      {
         "company":"Red Hat Inc.",
         "title":"Software Engineering Intern",
         "years":"May 2022 - Aug 2022",
-        "description":"Worked with the Ansible Productization team, wherein created an generic Ansible Collection for Localization using third party software called as the Memsource and using it's api for translation."
+        "location": "Boston, Massachusetts",
+        "description":"Worked with the Ansible Productization team, wherein created an generic Ansible Collection for Localization using third party software called as the Memsource and using it's api for translation",
+        "logo": "red_hat.png",
+        "url": "https://www.redhat.com/"
+      },
+      {
+        "company":"Northeastern University, D'Amore-McKim School of Business",
+        "title":"Graduate Research Assistant",
+        "years":"Jan 2022 - Mar 2022",
+        "location": "Boston, Massachusetts",
+        "description":"Worked in the field of Supply Chain Management on project of combating issues such as human trafficking with help of analyzing and processing huge pipeline of data which helped in research related activities",
+        "logo": "damore.png",
+        "url": "https://damore-mckim.northeastern.edu/"
       },
       {
         "company":"Northeastern University, College of Engineering",
         "title":"Graduate Teaching Assistant",
         "years":"Sept 2021 - Nov 2022",
-        "description":"Worked with Professor Daniel Peters for the course CSYE7374 - Design Patterns & CSYE6200 - Object Oriented Design while pursuing my graduate studies."
+        "location": "Boston, Massachusetts",
+        "description":"Worked as a TA for the course CSYE7374 - Design Patterns & CSYE6200 - Object Oriented Design while pursuing my graduate studies",
+        "logo": "neu.png",
+        "url": "https://coe.northeastern.edu/"
       },
       {
         "company":"Adnet Global",
         "title":"Python Consultant",
         "years":"May 2021 - Sept 2021",
-        "description":"Worked as a Python Development consultant wherein onboarded a software solution and created several workflows by utilizing API endpoints for smoother setup."
+        "location": "Remote",
+        "description":"Worked as a Python Development consultant wherein onboarded a software solution and created several workflows by utilizing API endpoints for smoother setup",
+        "logo": "adnet.png",
+        "url": "https://www.adnetglobal.com/"
       },
       {
         "company":"Decimal Point Analytics",
         "title":"Python Programmer",
         "years":"June 2020 - Sept 2021",
-        "description":"Worked in an Data focused analytics based company as a Python Developer. Focused majorly on creating powerful interactive visuals using various Python & JavaScript Libraries for gaining meaningful insights. Created various Web Applications & automation scripts."
+        "location": "Mumbai, Maharashtra",
+        "description":"Worked in an Data focused analytics based company as a Python Developer. Focused majorly on creating powerful interactive visuals using various Python & JavaScript Libraries for gaining meaningful insights. Created various Web Applications & automation scripts",
+        "logo": "decimal.png",
+        "url": "https://www.decimalpointanalytics.com/"
       },
       {
         "company":"Intertrust Group",
         "title":"Associate",
         "years":"September 2016 - June 2020",
-        "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention."
+        "location": "Mumbai, Maharashtra",
+        "description":"Worked in a Hedge Fund Company as a Linux Administrator, working majorly on creating various Python Programming Scripts for automating mundane monotonous tasks which usually required human intervention",
+        "logo": "intertrust.png",
+        "url": "https://www.intertrustgroup.com/"
+      }
+    ],
+    "projects": [
+      {
+        "name": "",
+        "link": ""
       }
     ],
     "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux", "Java"],
     "skills_values": [80, 50, 80, 60, 70, 80, 70, 60, 80, 90],
     "certificationmessage": "Please view the below certifications I've accomplished!",
     "certification" : [
+      {
+        "name": "Java (Basic)",
+        "logo": "hackerrank_logo.jpg",
+        "author": "Hackerrank",
+        "issued": "Oct 2022",
+        "link": "https://www.hackerrank.com/certificates/e931e316890a"
+      },
       {
         "name": "AWS Certified Solutions Architect - Associate",
         "logo": "aws.png",
@@ -110,6 +156,7 @@
         "author": "Hackerrank",
         "issued": "May 2021",
         "link": "https://www.hackerrank.com/certificates/a01325f55ef0"
-    }]
+      }
+    ]
   }
 }

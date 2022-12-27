@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Radar } from 'react-chartjs-2';
+import 'react-vertical-timeline-component/style.min.css';
+import Timeline from './Timeline';
 
 class Resume extends Component {
   
@@ -11,12 +13,6 @@ class Resume extends Component {
         return <div key={education.school}><h3>{education.school}</h3>
         <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
         <p>{education.description}</p></div>
-      });
-      var work = this.props.data.work.map(function(work){
-        return <div key={work.company}><h3>{work.company}</h3>
-            <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-            <p>{work.description}</p>
-        </div>
       });
       var data = {
         labels: this.props.data.skills,
@@ -73,16 +69,26 @@ class Resume extends Component {
       </div>
 
 
-      <div className="row work">
-
+      <div className="row work">      
          <div className="three columns header-col">
             <h1><span>Work</span></h1>
          </div>
 
          <div className="nine columns main-col">
-          {work}
+          {this.props.data ? <Timeline data={this.props.data.work} /> : null}
         </div>
-    </div>
+      </div>
+
+      {/* <div className="row work">
+
+         <div className="three columns header-col">
+            <h1><span>My Projects</span></h1>
+         </div>
+
+         <div className="nine columns main-col">
+          <p>Projects will go here!</p>
+        </div>
+      </div> */}
 
       <div className="row work">
          <div className="three columns header-col">
