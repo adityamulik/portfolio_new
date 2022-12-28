@@ -15,10 +15,16 @@
 
 .vertical-timeline-element-icon:hover {
   cursor: pointer;
+  opacity: 0.6;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
 }
-
-.vertical-timeline-element--work {
-  
+.vertical-timeline-element-icon {
+  opacity: 1.0;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 }
 
 .vertical-timeline-element-content {
