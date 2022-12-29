@@ -27,7 +27,7 @@ export default function Project({data}) {
         image={"images/" + data.image}
         alt={data.name}
       />
-      <CardContent>
+      <CardContent className='project-content'>
         <Typography gutterBottom variant="h5" component="div">
           {data.name}
         </Typography>
@@ -35,10 +35,8 @@ export default function Project({data}) {
           {data.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        {/* <Button size="small" color="primary">
-          Share
-        </Button> */}
+      <CardActions className='project-button'>
+          <Button target="_blank" href={data.url}>View Project</Button>
       </CardActions>
     </Card>
   );

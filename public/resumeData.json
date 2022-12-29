@@ -154,13 +154,13 @@
     ]
   },
   "projects": {
-    "description": "Over the last two years, I have been proud about my contributions and achievements for these key projects. To summarize.... - I worked with Ansible, an IaaS open source tool widely used by many organizations in the world. - I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. - Several other contributions to open source and key learnings I've shared as per below and have linked my projects. ",
+    "description": "Over the last two years, I have been proud about my contributions and achievements for these key projects. To summarize, I worked with the Red Hat's Ansible Team, Ansible an IaaS open source tool widely used by many organizations in the world. I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. Several other contributions to open source and key learnings I've shared as per below and have linked my projects.",
     "projects": [
       {
         "name": "IPTC Automation",
         "year": "May 2021 - Sept 2021",
-        "description": "",
-        "url": "https://github.com/ansible/ansible-collection-memsource",
+        "description": "A full stack web application made to automate the process of adding metadata to images with a simple web User Interface",
+        "url": "https://github.com/adityamulik/IPTC-Backend",
         "image": "iptc-logo.png"
       },
       {
@@ -171,11 +171,11 @@
         "image": "Ansible_logo.png"
       },      
       {
-        "name": "My Portfolio Website",
-        "year": "May 2021 - Sept 2021",
-        "description": "The Ansible Collection written with YAML config files & Python to leverage third party translation tool API to automate the translation of currently offered Ansible Products",
-        "url": "https://github.com/ansible/ansible-collection-memsource",
-        "image": "Ansible_logo.png"
+        "name": "Automated Grading Templates",
+        "year": "Sept 2021 - Dec 2022",
+        "description": "Created templates for GitHub classroom and added GitHub Actions for automated run, grading and linting purpose, while working as a TA at Northeastern University",
+        "url": "https://github.com/CSYE6200-Object-Oriented-Design/Object-Oriented-Design-Template-Repository",
+        "image": "neu_logo.png"
       }
     ]
   }
