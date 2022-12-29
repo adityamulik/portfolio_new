@@ -1,45 +1,22 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import Carousel from 'react-elastic-carousel';
-// import Item from "./Item";
-import './Carousel.css';
-import GitHubCalendar from 'react-github-calendar';
-import ReactTooltip from 'react-tooltip';
+import Project from './Project';
+import './Project.css';
 
-class Portfolio extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      githubData: []
-    };
-  };
-
-  componentDidMount() {
-    axios.get(`https://api.github.com/users/adityamulik/repos`)
-      .then(res => {
-        this.setState({githubData: res.data});
-      })
-  }
+class Portfolio extends Component {  
 
   render() {
 
-    if(this.state.githubData) {
-      // console.log(this.state.githubData[15]);
-      // const obj = this.state.githubData.map(data => {
-      //   return <Item key={data.name}>{data.name}</Item>
-      // })
-      for(let i=1; i<=this.state.githubData.length; i++) {
-        // console.log(this.state.githubData[i]);
-      }
-    }
+    if(this.props.data) {
+      var description = this.props.data.description;
+      console.log(description);
 
-    // const breakPoints = [
-    //   {width: 1, itemsToShow: 1},
-    //   {width: 550, itemsToShow: 2},
-    //   {width: 768, itemsToShow: 3},
-    //   {width: 1200, itemsToShow: 4},
-    // ]
+      var project = this.props.data.projects.map(
+        (item) => {
+          return (<Project data={item}/>)
+        }
+      );
+    }
     
     return (
 
@@ -50,17 +27,23 @@ class Portfolio extends Component {
           </div>
 
           <div className="twelve columns collapsed">
-              <h1>My GitHub Calendar.</h1>
+              <h1 style={{fontSize: "30px"}}>Projects!</h1>
+              <p>
+                Over the last two years, I have been proud about my contributions and achievements for these key projects.<br></br> <br></br>  
+                To summarize.....<br></br> 
+                - I worked with the Red Hat's Ansible Team,
+                Ansible an IaaS open source tool widely used by many organizations in the world<br></br> 
+                - I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees<br></br> 
+                - While working as a Teaching Assistant during my Masters, I transitioned the traditional approach of manual grading to automated grading<br></br> 
+                <br></br> 
+                The source code & samples can be viewed by clicking the links mentioned below!
+              </p>
 
-              <div id="portfolio-wrapper" className="github-calendar">
-                <GitHubCalendar 
-                  username="adityamulik" 
-                  color="#11ABB0" 
-                >
-                  <ReactTooltip delayShow={50} html />
-                </GitHubCalendar>
+              <div className="project-container">
+                  {project}             
               </div>
-            </div>
+              <h1 className="more-projects"><a href="https://www.github.com/adityamulik?tab=repositories">View more projects by clicking here!</a></h1>
+          </div>
         </div>
       </section>
     );
