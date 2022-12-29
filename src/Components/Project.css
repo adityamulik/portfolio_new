@@ -1,0 +1,36 @@
+
+.project-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-project {
+  margin: 10px;
+  width: 300px;
+}
+
+.project-image {
+  margin-top: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain !important;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1169px) {
+  
+  .project-container {
+    width: 100%;
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .project-container {
+    width: 100%;
+    display: grid;
+  }
+}

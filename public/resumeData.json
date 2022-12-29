@@ -157,18 +157,25 @@
     "description": "Over the last two years, I have been proud about my contributions and achievements for these key projects. To summarize.... - I worked with Ansible, an IaaS open source tool widely used by many organizations in the world. - I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. - Several other contributions to open source and key learnings I've shared as per below and have linked my projects. ",
     "projects": [
       {
+        "name": "IPTC Automation",
+        "year": "May 2021 - Sept 2021",
+        "description": "",
+        "url": "https://github.com/ansible/ansible-collection-memsource",
+        "image": "iptc-logo.png"
+      },
+      {
         "name": "Ansible Collection Memsource",
+        "year": "May 2022 - Aug 2022",
         "description": "The Ansible Collection written with YAML config files & Python to leverage third party translation tool API to automate the translation of currently offered Ansible Products",
         "url": "https://github.com/ansible/ansible-collection-memsource",
         "image": "Ansible_logo.png"
-      },
+      },      
       {
-        "name": "IPTC Automation",
-        "description": ""
-      },
-      {
-        "name": "",
-        "description": ""
+        "name": "My Portfolio Website",
+        "year": "May 2021 - Sept 2021",
+        "description": "The Ansible Collection written with YAML config files & Python to leverage third party translation tool API to automate the translation of currently offered Ansible Products",
+        "url": "https://github.com/ansible/ansible-collection-memsource",
+        "image": "Ansible_logo.png"
       }
     ]
   }

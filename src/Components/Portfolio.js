@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Project from './Project';
+import './Project.css';
 
 class Portfolio extends Component {  
 
@@ -31,8 +32,8 @@ class Portfolio extends Component {
                 {description}
               </p>
 
-              <div className="card-holder">
-                {project}
+              <div className="project-container">
+                  {project}             
               </div>
           </div>
         </div>
