@@ -1,4 +1,4 @@
-import React, { lazy, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "./Timeline.css";
 import { BsPlusLg } from "react-icons/bs";
@@ -8,7 +8,7 @@ const Timeline = ({ data }) => {
   const [counter, setCounter] = useState(2);
   const [elements, setElements] = useState(
     [
-      data.slice(0,2).map((item, idx) => {
+      data.slice(0,2).map((item) => {
         return (
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -30,7 +30,7 @@ const Timeline = ({ data }) => {
 
   const lazyLoadItems = () => {
     let newElements = [
-      data.slice(counter, counter + 2).map((item, idx) => {
+      data.slice(counter, counter + 2).map((item) => {
         return (
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -57,7 +57,7 @@ const Timeline = ({ data }) => {
       lineColor='#11aaaf'
     >
       {elements}
-      {length < counter ? 
+      {length <= counter ? 
         null :
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
