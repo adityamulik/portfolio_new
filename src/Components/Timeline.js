@@ -10,7 +10,7 @@ const Timeline = ({ data }) => {
     [
       data.slice(0,2).map((item) => {
         return (
-            <VerticalTimelineElement
+          <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={item.years}
             icon={<img className="company_logo" style={{ borderRadius: "50%" }} src={"images/" + item.logo} alt="Company Logo" />}
