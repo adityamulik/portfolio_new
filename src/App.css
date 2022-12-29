@@ -22,11 +22,11 @@
   to{ bottom:0; opacity:1 }
 }
 
-.react-github-calendar__calendar {
+/* .react-github-calendar__calendar {
   border: 1px solid rgb(82, 82, 82, 0.4);
   color: #525252;
   box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
+} */
 
 .certificate {
   display: flex;

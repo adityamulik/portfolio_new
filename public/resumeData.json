@@ -125,13 +125,7 @@
         "logo": "intertrust.png",
         "url": "https://www.intertrustgroup.com/"
       }
-    ],
-    "projects": [
-      {
-        "name": "",
-        "link": ""
-      }
-    ],
+    ],    
     "skills": ["Python", "Azure", "AWS", "Database", "REST API", "JavaScript", "Git", "Html&CSS", "Linux", "Java"],
     "skills_values": [80, 50, 80, 60, 70, 80, 70, 60, 80, 90],
     "certificationmessage": "Please view the below certifications I've accomplished!",
@@ -156,6 +150,25 @@
         "author": "Hackerrank",
         "issued": "May 2021",
         "link": "https://www.hackerrank.com/certificates/a01325f55ef0"
+      }
+    ]
+  },
+  "projects": {
+    "description": "Over the last two years, I have been proud about my contributions and achievements for these key projects. To summarize.... - I worked with Ansible, an IaaS open source tool widely used by many organizations in the world. - I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. - Several other contributions to open source and key learnings I've shared as per below and have linked my projects. ",
+    "projects": [
+      {
+        "name": "Ansible Collection Memsource",
+        "description": "The Ansible Collection written with YAML config files & Python to leverage third party translation tool API to automate the translation of currently offered Ansible Products",
+        "url": "https://github.com/ansible/ansible-collection-memsource",
+        "image": "Ansible_logo.png"
+      },
+      {
+        "name": "IPTC Automation",
+        "description": ""
+      },
+      {
+        "name": "",
+        "description": ""
       }
     ]
   }

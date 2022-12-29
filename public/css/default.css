@@ -118,6 +118,10 @@ table {
    border-spacing: 0;
 }
 
+.card-holder {
+   display: flex;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* c. Default and Basic Styles
