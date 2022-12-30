@@ -21,23 +21,25 @@ export default function Project({data}) {
       onMouseOut={onMouseOut}
       zDepth={shadow}
     >
-      <CardMedia
-        className="project-image"
-        component="img"
-        image={"images/" + data.image}
-        alt={data.name}
-      />
-      <CardContent className='project-content'>
-        <Typography gutterBottom variant="h5" component="div">
-          {data.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {data.description}
-        </Typography>
-      </CardContent>
-      <CardActions className='project-button'>
-          <Button target="_blank" href={data.url}>View Project</Button>
-      </CardActions>
+      <CardActionArea>
+        <CardMedia
+          className="project-image"
+          component="img"
+          image={"images/" + data.image}
+          alt={data.name}
+        />
+        <CardContent className='project-content'>
+          <Typography gutterBottom variant="h5" component="div">
+            {data.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {data.description}
+          </Typography>
+        </CardContent>
+        <CardActions className='project-button'>
+            <Button target="_blank" href={data.url}>View Project</Button>
+        </CardActions>
+      </CardActionArea>
     </Card>
   );
 }
