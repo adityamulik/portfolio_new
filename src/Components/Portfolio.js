@@ -27,7 +27,7 @@ class Portfolio extends Component {
           </div>
 
           <div className="twelve columns collapsed">
-              <h1 style={{fontSize: "30px"}}>Projects!</h1>
+              <h1>Projects!</h1>
               <p className="project-description">
                 Over the last two years, I have been proud about my contributions and achievements for these key projects.<br></br> <br></br>  
                 To summarize.....<br></br> 
