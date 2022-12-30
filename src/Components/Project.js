@@ -21,7 +21,9 @@ export default function Project({data}) {
       onMouseOut={onMouseOut}
       zDepth={shadow}
     >
-      <CardActionArea>
+      <CardActionArea
+        onClick={() => window.open(data.url)}
+      >
         <CardMedia
           className="project-image"
           component="img"
