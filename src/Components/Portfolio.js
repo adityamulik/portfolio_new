@@ -28,7 +28,7 @@ class Portfolio extends Component {
 
           <div className="twelve columns collapsed">
               <h1 style={{fontSize: "30px"}}>Projects!</h1>
-              <p>
+              <p className="project-description">
                 Over the last two years, I have been proud about my contributions and achievements for these key projects.<br></br> <br></br>  
                 To summarize.....<br></br> 
                 - I worked with the Red Hat's Ansible Team,

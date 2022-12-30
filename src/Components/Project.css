@@ -52,4 +52,8 @@
     width: 100%;
     display: grid;
   }
+
+  .project-description {
+    margin: 20px;
+  }
 }
