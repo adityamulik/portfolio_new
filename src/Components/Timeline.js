@@ -13,7 +13,7 @@ const Timeline = ({ data }) => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={item.years}
-            icon={<img className="company_logo" style={{ borderRadius: "50%" }} src={"images/" + item.logo} alt="Company Logo" />}
+            icon={<img className="company-logo" style={{ borderRadius: "50%" }} src={"images/" + item.logo} alt="Company Logo" />}
             iconOnClick={() => window.open(item.url)}
           >
             <h3 className="vertical-timeline-element-company">{item.company}</h3>
@@ -35,7 +35,7 @@ const Timeline = ({ data }) => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={item.years}
-            icon={<img className="company_logo" style={{ borderRadius: "50%" }} src={"images/" + item.logo} alt="Company Logo" />}
+            icon={<img className="company-logo" style={{ borderRadius: "50%" }} src={"images/" + item.logo} alt="Company Logo" />}
             iconOnClick={() => window.open(item.url)}
           >
             <h3 className="vertical-timeline-element-company">{item.company}</h3>

@@ -1,4 +1,7 @@
-
+.project-header {
+  color: black !important;
+  font-size: 1.5em !important;
+}
 .project-container {
   width: 100%;
   display: flex;
