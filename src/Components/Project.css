@@ -23,7 +23,7 @@
 }
 
 .project-image {
-  margin-top: 5px;
+  padding: 1.5em !important;
   width: 300px;
   height: 300px;
   object-fit: contain !important;
