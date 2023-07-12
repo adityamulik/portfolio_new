@@ -76,7 +76,7 @@
         "title":"Software Engineering Intern",
         "years":"May 2022 - Aug 2022",
         "location": "Boston, Massachusetts",
-        "description":"Worked with the Ansible Productization team, wherein created an generic Ansible Collection for Localization using third party software called as the Memsource and using it's api for translation",
+        "description":"Worked with the Ansible Productization team, wherein created a generic Ansible Collection for Localization using third party software called as the Memsource and using it's api for translation",
         "logo": "red_hat.png",
         "url": "https://www.redhat.com/"
       },
