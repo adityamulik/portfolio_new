@@ -154,7 +154,7 @@
     ]
   },
   "projects": {
-    "description": "Over the last two years, I have been proud about my contributions and achievements for these key projects. To summarize, I worked with the Red Hat's Ansible Team, Ansible an IaaS open source tool widely used by many organizations in the world. I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. Several other contributions to open source and key learnings I've shared as per below and have linked my projects.",
+    "description": "Over the last two years, I am proud about my contributions and achievements for these key projects. To summarize, I worked with the Red Hat's Ansible Team, Ansible an IaaS open source tool widely used by many organizations in the world. I had worked as a freelance consultant developing in-house application for automating a workflow used by approximately 50 employees. Several other contributions to open source and key learnings I've shared as per below and have linked my projects.",
     "projects": [
       {
         "name": "IPTC Automation",
