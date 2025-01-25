@@ -131,6 +131,20 @@
     "certificationmessage": "Please view the below certifications I've accomplished!",
     "certification" : [
       {
+        "name": "Walmart Global Techathon - 2024",
+        "logo": "global_techathon.png",
+        "author": "Walmart Global Tech",
+        "issued": "Jul 2024",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:7219282996753805312/"
+      },
+      {
+        "name": "Walmart Global Tech - Bravo Awards - 2023",
+        "logo": "bravo.png",
+        "author": "Walmart Global Tech",
+        "issued": "May 2023",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:7100239153375711232/"
+      },
+      {
         "name": "Java (Basic)",
         "logo": "hackerrank_logo.jpg",
         "author": "Hackerrank",
