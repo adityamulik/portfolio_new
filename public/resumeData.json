@@ -5,7 +5,7 @@
     "description":"I hold a total of five years of experience in the domain of Infrastructure & Software Development",
     "image":"profilepic.jpg",
     "bio":"Scroll down to know more about me!",
-    "aboutme": "I am a seasoned Software Engineer with a dedicated approach to work and aspire to attain larger goals. My key interest lies in problem solving and building products which aims to solve real world problems with help of several programming languages and cloud solutions. Currently I’m working with Walmart Global Tech at Reston, Virginia as a Software Engineer.",
+    "aboutme": "I am a seasoned Software Engineer with a dedicated approach to work and aspire to attain larger goals. My key interest lies in problem solving and building products which aims to solve real world problems with help of several programming languages and cloud solutions. Currently I’m working with Walmart Global Tech at Herndon, Virginia as a Software Engineer.",
     "contactmessage":"",
     "email": "aditya.mulik@gmail.com",
     "phone": "+x-xxx-xxx-xxxx",
@@ -66,7 +66,7 @@
         "company": "Walmart Global Tech",
         "title": "Software Engineer - III",
         "years": "Jan 2023 - Present",
-        "location": "Reston, Virginia",
+        "location": "Herndon, Virginia",
         "description": "Working with the Stores, Associates & Platform's Team as a backend Software Engineer on the data ingestion pipelines built using micro-services based architecture in a distributed environment handling millions of events and serving approximately 1.5 million Walmart Associates",
         "logo": "walmart_logo.png",
         "url": "https://tech.walmart.com/content/walmart-global-tech/en_us.html"
